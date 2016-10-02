@@ -30,7 +30,7 @@ struct BrewInstall {
     // Inspiration / Stolen from: http://stackoverflow.com/a/26973384/936269
     func brewInstall(args: String...) -> Int32 {
         let task = NSTask()
-        task.launchPath = LAUNCH_PATH
+        task.launchPath = SharedVariables().launchPath()
         task.arguments = args
         task.launch()
         task.waitUntilExit()

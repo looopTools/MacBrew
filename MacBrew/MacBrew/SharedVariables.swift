@@ -11,7 +11,13 @@ import Foundation
 // All variables in this file is used application wide 
 // And should NEVER be changed 
 
-let LAUNCH_PATH = "/usr/local/bin/brew"
+struct SharedVariables {
+
+    func launchPath() -> String {
+        return "/usr/local/bin/brew"
+    }
+
+}
 
 
 

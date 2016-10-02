@@ -33,9 +33,9 @@ class ViewController: NSViewController {
         
         packageList.beginUpdates()
         
-        packageList.insertRowsAtIndexPaths([
-            NSIndexPath(forRow: searchResult.count-1, inSection: 0)
-            ], withRowAnimation: .Automatic)
+//        packageList.insertRowsAtIndexPaths([
+//            NSIndexPath(forRow: searchResult.count-1, inSection: 0)
+//            ], withRowAnimation: .Automatic)
         packageList.endUpdates()
     }
 

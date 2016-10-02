@@ -13,7 +13,7 @@ struct BrewList {
     func list() -> [String] {
         // Basic setup of NSTask
         let task = NSTask()
-        task.launchPath = LAUNCH_PATH
+        task.launchPath = SharedVariables().launchPath()
         task.arguments = ["list"]
         
         // Create a pipe and set it as the output for the task
