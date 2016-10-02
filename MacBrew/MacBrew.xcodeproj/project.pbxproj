@@ -14,8 +14,9 @@
 		4E49D4BB1D9C124800F1DF14 /* MacBrewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E49D4BA1D9C124800F1DF14 /* MacBrewTests.swift */; };
 		4E49D4C61D9C124800F1DF14 /* MacBrewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E49D4C51D9C124800F1DF14 /* MacBrewUITests.swift */; };
 		4E49D4D41D9C12DA00F1DF14 /* BrewInstall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E49D4D31D9C12DA00F1DF14 /* BrewInstall.swift */; };
-		4E49D4D61D9C192E00F1DF14 /* SearchBrew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E49D4D51D9C192E00F1DF14 /* SearchBrew.swift */; };
+		4E49D4D61D9C192E00F1DF14 /* BrewSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E49D4D51D9C192E00F1DF14 /* BrewSearch.swift */; };
 		4E49D4D81D9C194100F1DF14 /* SharedVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E49D4D71D9C194100F1DF14 /* SharedVariables.swift */; };
+		4E738D351DA04DF9008FE081 /* BrewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E738D341DA04DF9008FE081 /* BrewList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +50,9 @@
 		4E49D4C51D9C124800F1DF14 /* MacBrewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacBrewUITests.swift; sourceTree = "<group>"; };
 		4E49D4C71D9C124800F1DF14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E49D4D31D9C12DA00F1DF14 /* BrewInstall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrewInstall.swift; sourceTree = "<group>"; };
-		4E49D4D51D9C192E00F1DF14 /* SearchBrew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBrew.swift; sourceTree = "<group>"; };
+		4E49D4D51D9C192E00F1DF14 /* BrewSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrewSearch.swift; sourceTree = "<group>"; };
 		4E49D4D71D9C194100F1DF14 /* SharedVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedVariables.swift; sourceTree = "<group>"; };
+		4E738D341DA04DF9008FE081 /* BrewList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrewList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +109,9 @@
 				4E49D4AE1D9C124800F1DF14 /* Main.storyboard */,
 				4E49D4B11D9C124800F1DF14 /* Info.plist */,
 				4E49D4D31D9C12DA00F1DF14 /* BrewInstall.swift */,
-				4E49D4D51D9C192E00F1DF14 /* SearchBrew.swift */,
+				4E49D4D51D9C192E00F1DF14 /* BrewSearch.swift */,
 				4E49D4D71D9C194100F1DF14 /* SharedVariables.swift */,
+				4E738D341DA04DF9008FE081 /* BrewList.swift */,
 			);
 			path = MacBrew;
 			sourceTree = "<group>";
@@ -262,7 +265,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E49D4AB1D9C124800F1DF14 /* ViewController.swift in Sources */,
-				4E49D4D61D9C192E00F1DF14 /* SearchBrew.swift in Sources */,
+				4E738D351DA04DF9008FE081 /* BrewList.swift in Sources */,
+				4E49D4D61D9C192E00F1DF14 /* BrewSearch.swift in Sources */,
 				4E49D4D41D9C12DA00F1DF14 /* BrewInstall.swift in Sources */,
 				4E49D4D81D9C194100F1DF14 /* SharedVariables.swift in Sources */,
 				4E49D4A91D9C124800F1DF14 /* AppDelegate.swift in Sources */,
@@ -487,6 +491,7 @@
 				4E49D4CC1D9C124800F1DF14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4E49D4CD1D9C124800F1DF14 /* Build configuration list for PBXNativeTarget "MacBrewTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +500,7 @@
 				4E49D4CF1D9C124800F1DF14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4E49D4D01D9C124800F1DF14 /* Build configuration list for PBXNativeTarget "MacBrewUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +509,7 @@
 				4E49D4D21D9C124800F1DF14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
