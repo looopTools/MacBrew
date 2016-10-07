@@ -27,6 +27,11 @@ struct BrewInstall {
         // brewInstall(COMMAND, "install", packageName, args)
     }
     
+    func unistall(packageName: String, args: [String]) {
+        let argumentString = constructArgumentString(args)
+        brewInstall("uninstall", packageName, argumentString)
+    }
+    
     // Inspiration / Stolen from: http://stackoverflow.com/a/26973384/936269
     func brewInstall(args: String...) -> Int32 {
         let task = NSTask()
@@ -37,8 +42,9 @@ struct BrewInstall {
         return task.terminationStatus
     }
     
+    
     // NOTE: This function should be illiminated when splashing is
-    // Implemented in Swift.
+    // implemented in Swift.
     func constructArgumentString(args: [String]) -> String {
         var result = ""
         for argument in args {
