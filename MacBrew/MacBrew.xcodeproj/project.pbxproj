@@ -19,6 +19,7 @@
 		4E49D4D81D9C194100F1DF14 /* SharedVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E49D4D71D9C194100F1DF14 /* SharedVariables.swift */; };
 		4E738D351DA04DF9008FE081 /* BrewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E738D341DA04DF9008FE081 /* BrewList.swift */; };
 		4E8092DE1DA176210015DD27 /* SettingsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8092DD1DA176210015DD27 /* SettingsHandler.swift */; };
+		4E8E07A01DB1710E000991C7 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8E079F1DB1710E000991C7 /* Package.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		4E49D4D71D9C194100F1DF14 /* SharedVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedVariables.swift; sourceTree = "<group>"; };
 		4E738D341DA04DF9008FE081 /* BrewList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrewList.swift; sourceTree = "<group>"; };
 		4E8092DD1DA176210015DD27 /* SettingsHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsHandler.swift; sourceTree = "<group>"; };
+		4E8E079F1DB1710E000991C7 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				4E738D341DA04DF9008FE081 /* BrewList.swift */,
 				4E8092DD1DA176210015DD27 /* SettingsHandler.swift */,
 				4E32EDE41DA8308C00E5C7AE /* BrewUpdate.swift */,
+				4E8E079F1DB1710E000991C7 /* Package.swift */,
 			);
 			path = MacBrew;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				4E49D4AB1D9C124800F1DF14 /* ViewController.swift in Sources */,
 				4E738D351DA04DF9008FE081 /* BrewList.swift in Sources */,
 				4E49D4D61D9C192E00F1DF14 /* BrewSearch.swift in Sources */,
+				4E8E07A01DB1710E000991C7 /* Package.swift in Sources */,
 				4E49D4D41D9C12DA00F1DF14 /* BrewInstall.swift in Sources */,
 				4E49D4D81D9C194100F1DF14 /* SharedVariables.swift in Sources */,
 				4E8092DE1DA176210015DD27 /* SettingsHandler.swift in Sources */,
