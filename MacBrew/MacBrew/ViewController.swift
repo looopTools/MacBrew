@@ -11,11 +11,11 @@ import Cocoa
 class ViewController: NSViewController {
 
     @IBOutlet weak var packageList: NSTableView!
-    
+
     var packages:[Package]?
-    
+
     override func viewDidLoad() {
-        
+
         super.viewDidLoad()
         packageList.setDelegate(self)
         packageList.setDataSource(self)
@@ -23,24 +23,21 @@ class ViewController: NSViewController {
         // Do any additional setup after loading the view.
     }
 
-    override var representedObject: AnyObject? {
-        didSet {
+    //override var representedObject: AnyObject? {
+      //  didSet {
         // Update the view, if already loaded.
-        }
-    }
+       // }
+    //}
 
-    @IBAction func searchForPackage(sender: NSSearchField) {
+    @IBAction func searchForPackage(_ sender: NSSearchField) {
         let searchTerm = sender.stringValue;
         let searchResult = BrewSearch().search(searchTerm)
         for item in searchResult {
             print(item)
         }
-        
+
         packageList.beginUpdates()
-        
-//        packageList.insertRowsAtIndexPaths([
-//            NSIndexPath(forRow: searchResult.count-1, inSection: 0)
-//            ], withRowAnimation: .Automatic)
+        // logic for update
         packageList.endUpdates()
     }
 
@@ -87,4 +84,3 @@ extension ViewController : NSTableViewDelegate {
         return nil
     }
 }
-

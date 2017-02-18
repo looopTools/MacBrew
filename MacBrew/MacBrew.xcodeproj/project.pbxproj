@@ -18,8 +18,8 @@
 		4E49D4D61D9C192E00F1DF14 /* BrewSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E49D4D51D9C192E00F1DF14 /* BrewSearch.swift */; };
 		4E49D4D81D9C194100F1DF14 /* SharedVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E49D4D71D9C194100F1DF14 /* SharedVariables.swift */; };
 		4E738D351DA04DF9008FE081 /* BrewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E738D341DA04DF9008FE081 /* BrewList.swift */; };
-		4E8092DE1DA176210015DD27 /* SettingsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8092DD1DA176210015DD27 /* SettingsHandler.swift */; };
-		4E8E07A01DB1710E000991C7 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8E079F1DB1710E000991C7 /* Package.swift */; };
+		7911F5F81E58727700B97DA1 /* Brew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7911F5F71E58727700B97DA1 /* Brew.swift */; };
+		7911F5FA1E5872FA00B97DA1 /* BrewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7911F5F91E5872FA00B97DA1 /* BrewType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +57,13 @@
 		4E49D4D51D9C192E00F1DF14 /* BrewSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrewSearch.swift; sourceTree = "<group>"; };
 		4E49D4D71D9C194100F1DF14 /* SharedVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedVariables.swift; sourceTree = "<group>"; };
 		4E738D341DA04DF9008FE081 /* BrewList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrewList.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		4E8092DD1DA176210015DD27 /* SettingsHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsHandler.swift; sourceTree = "<group>"; };
 		4E8E079F1DB1710E000991C7 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+=======
+		7911F5F71E58727700B97DA1 /* Brew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brew.swift; sourceTree = "<group>"; };
+		7911F5F91E5872FA00B97DA1 /* BrewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrewType.swift; sourceTree = "<group>"; };
+>>>>>>> cleanup-restruct
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,9 +123,14 @@
 				4E49D4D51D9C192E00F1DF14 /* BrewSearch.swift */,
 				4E49D4D71D9C194100F1DF14 /* SharedVariables.swift */,
 				4E738D341DA04DF9008FE081 /* BrewList.swift */,
+<<<<<<< HEAD
 				4E8092DD1DA176210015DD27 /* SettingsHandler.swift */,
 				4E32EDE41DA8308C00E5C7AE /* BrewUpdate.swift */,
 				4E8E079F1DB1710E000991C7 /* Package.swift */,
+=======
+				7911F5F71E58727700B97DA1 /* Brew.swift */,
+				7911F5F91E5872FA00B97DA1 /* BrewType.swift */,
+>>>>>>> cleanup-restruct
 			);
 			path = MacBrew;
 			sourceTree = "<group>";
@@ -211,13 +221,16 @@
 				TargetAttributes = {
 					4E49D4A41D9C124800F1DF14 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
 					};
 					4E49D4B51D9C124800F1DF14 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
 						TestTargetID = 4E49D4A41D9C124800F1DF14;
 					};
 					4E49D4C01D9C124800F1DF14 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
 						TestTargetID = 4E49D4A41D9C124800F1DF14;
 					};
 				};
@@ -276,11 +289,18 @@
 				4E49D4AB1D9C124800F1DF14 /* ViewController.swift in Sources */,
 				4E738D351DA04DF9008FE081 /* BrewList.swift in Sources */,
 				4E49D4D61D9C192E00F1DF14 /* BrewSearch.swift in Sources */,
+<<<<<<< HEAD
 				4E8E07A01DB1710E000991C7 /* Package.swift in Sources */,
 				4E49D4D41D9C12DA00F1DF14 /* BrewInstall.swift in Sources */,
 				4E49D4D81D9C194100F1DF14 /* SharedVariables.swift in Sources */,
 				4E8092DE1DA176210015DD27 /* SettingsHandler.swift in Sources */,
 				4E32EDE51DA8308C00E5C7AE /* BrewUpdate.swift in Sources */,
+=======
+				7911F5FA1E5872FA00B97DA1 /* BrewType.swift in Sources */,
+				4E49D4D41D9C12DA00F1DF14 /* BrewInstall.swift in Sources */,
+				4E49D4D81D9C194100F1DF14 /* SharedVariables.swift in Sources */,
+				7911F5F81E58727700B97DA1 /* Brew.swift in Sources */,
+>>>>>>> cleanup-restruct
 				4E49D4A91D9C124800F1DF14 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +439,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nyx.MacBrew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -431,6 +452,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nyx.MacBrew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -443,6 +465,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nyx.MacBrewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MacBrew.app/Contents/MacOS/MacBrew";
 			};
 			name = Debug;
@@ -456,6 +479,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nyx.MacBrewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MacBrew.app/Contents/MacOS/MacBrew";
 			};
 			name = Release;
@@ -468,6 +492,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nyx.MacBrewUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = MacBrew;
 			};
 			name = Debug;
@@ -480,6 +505,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nyx.MacBrewUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = MacBrew;
 			};
 			name = Release;

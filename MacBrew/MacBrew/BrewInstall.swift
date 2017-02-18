@@ -12,13 +12,13 @@ import Foundation
 struct BrewInstall {
 
     // pure install no arguments
-    func install(packageName: String) {
+    func install(_ packageName: String) {
         brewInstall("install", packageName)
     }
-    
+
     // Installation using arguments
-    func install(packageName: String, args: [String]) {
-        
+    func install(_ packageName: String, args: [String]) {
+
         // Need because spalshing is missing
         // Source: http://stackoverflow.com/a/24024724/936269
         let argumentString = constructArgumentString(args)
@@ -26,26 +26,27 @@ struct BrewInstall {
         // When splashing is supported
         // brewInstall(COMMAND, "install", packageName, args)
     }
-    
+
     func unistall(packageName: String, args: [String]) {
         let argumentString = constructArgumentString(args)
         brewInstall("uninstall", packageName, argumentString)
     }
-    
+
     // Inspiration / Stolen from: http://stackoverflow.com/a/26973384/936269
-    func brewInstall(args: String...) -> Int32 {
-        let task = NSTask()
-        task.launchPath = SharedVariables().launchPath()
+    func brewInstall(_ args: String...) -> Int32 {
+        let task = Process()
+        task.launchPath = LAUNCH_PATH
         task.arguments = args
         task.launch()
         task.waitUntilExit()
         return task.terminationStatus
     }
-    
-    
+
+
     // NOTE: This function should be illiminated when splashing is
-    // implemented in Swift.
-    func constructArgumentString(args: [String]) -> String {
+
+    // Implemented in Swift.
+    func constructArgumentString(_ args: [String]) -> String {
         var result = ""
         for argument in args {
             result = result + argument
