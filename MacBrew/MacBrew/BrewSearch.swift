@@ -11,7 +11,7 @@ import Foundation
 struct BrewSearch
 {
     // Return list instead
-    func search(term: String) -> [String] {
+    func search(_ term: String) -> [String] {
         
         let result = brewSearch("search", term)
         return result
@@ -20,29 +20,29 @@ struct BrewSearch
     // Return list instead
     // Inspired by: http://stackoverflow.com/q/29548811/936269
     // Inspired by: http://stackoverflow.com/a/29549342/936269
-    func brewSearch(args: String...) -> [String] {
+    func brewSearch(_ args: String...) -> [String] {
         
         // Basic setup of NSTask
-        let task = NSTask()
+        let task = Process()
         task.launchPath = LAUNCH_PATH
         task.arguments = args
         
         // Create a pipe and set it as the output for the task
-        let pipe = NSPipe()
+        let pipe = Pipe()
         task.standardOutput = pipe
         
         task.launch()
         task.waitUntilExit()
         
         let data = pipe.fileHandleForReading.readDataToEndOfFile()
-        let output: String = NSString(data: data, encoding: NSASCIIStringEncoding)! as String
+        let output: String = NSString(data: data, encoding: String.Encoding.ascii.rawValue)! as String
         // let status = task.terminationStatus // USE FOR ERROR HANDLING
         
         let result = searchResultStringToList(output)
         return result
     }
     
-    func searchResultStringToList(input: String) -> [String] {
+    func searchResultStringToList(_ input: String) -> [String] {
         let temp = input.characters.split{$0 == "\n"}.map(String.init)
         var result = [String]()
         
@@ -53,7 +53,7 @@ struct BrewSearch
         return result
     }
     
-    func clearSearchResultString(input: String) -> String {
+    func clearSearchResultString(_ input: String) -> String {
         
         var temp = input.characters.split{$0 == "/"}.map(String.init)
         

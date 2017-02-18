@@ -18,13 +18,13 @@ class ViewController: NSViewController {
         // Do any additional setup after loading the view.
     }
 
-    override var representedObject: AnyObject? {
-        didSet {
+    //override var representedObject: AnyObject? {
+      //  didSet {
         // Update the view, if already loaded.
-        }
-    }
+       // }
+    //}
 
-    @IBAction func searchForPackage(sender: NSSearchField) {
+    @IBAction func searchForPackage(_ sender: NSSearchField) {
         let searchTerm = sender.stringValue;
         let searchResult = BrewSearch().search(searchTerm)
         for item in searchResult {
@@ -32,10 +32,7 @@ class ViewController: NSViewController {
         }
         
         packageList.beginUpdates()
-        
-        packageList.insertRowsAtIndexPaths([
-            NSIndexPath(forRow: searchResult.count-1, inSection: 0)
-            ], withRowAnimation: .Automatic)
+        // log for update
         packageList.endUpdates()
     }
 
