@@ -11,17 +11,17 @@ import Foundation
 
 class Brew
 {
-    var m_name:String
-    var m_type:BrewType
-    var m_description:String
-    var m_installed:Bool
-    var m_outdated:Bool
+    var name:String
+    var type:BrewType
+    var description:String
+    var installed:Bool
+    var outdated:Bool
     
     init(name:String, type:BrewType) {
-        m_name = name
-        m_type = type
-        m_description = ""
-        m_installed = false
-        m_outdated = false
+        self.name = name
+        self.type = type
+        description = ""
+        installed = false
+        outdated = false
     }
 }

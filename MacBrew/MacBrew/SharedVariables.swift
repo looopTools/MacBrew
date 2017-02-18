@@ -11,7 +11,25 @@ import Foundation
 // All variables in this file is used application wide 
 // And should NEVER be changed 
 
-let LAUNCH_PATH = "/usr/local/bin/brew"
+var installed_packages: [Brew] = []
+
+struct SharedVariables {
+
+    func launchPath() -> String {
+        return "/usr/local/bin/brew"
+    }
+    
+    func isBrewInInstalledList(brew:Brew) -> Bool {
+        for value in installed_packages {
+            if value.name == brew.name {
+                return true
+            }
+        }
+        return false
+    }
+
+
+}
 
 
 

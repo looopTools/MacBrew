@@ -9,11 +9,11 @@
 import Foundation
 
 struct BrewList {
-
-    func list() -> [String] {
+    
+    func list(){
         // Basic setup of NSTask
         let task = Process()
-        task.launchPath = LAUNCH_PATH
+        task.launchPath = SharedVariables().launchPath()
         task.arguments = ["list"]
         
         // Create a pipe and set it as the output for the task
@@ -27,7 +27,15 @@ struct BrewList {
         // let status = task.terminationStatus // USE FOR ERROR HANDLING
         
         let result = searchResultStringToList(output)
-        return result
+        
+        for item in result {
+            let temp = Brew(name: item, type: BrewType.standard)
+            temp.installed = true
+            BrewCommands().description(brew: temp)
+            if !SharedVariables().isBrewInInstalledList(brew: temp) {
+                installed_packages.append(temp)
+            }
+        }
     }
     
     func searchResultStringToList(_ input: String) -> [String] {

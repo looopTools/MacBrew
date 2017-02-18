@@ -19,6 +19,8 @@
 		4E738D351DA04DF9008FE081 /* BrewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E738D341DA04DF9008FE081 /* BrewList.swift */; };
 		7911F5F81E58727700B97DA1 /* Brew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7911F5F71E58727700B97DA1 /* Brew.swift */; };
 		7911F5FA1E5872FA00B97DA1 /* BrewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7911F5F91E5872FA00B97DA1 /* BrewType.swift */; };
+		7984E2B31E58DF9F008B1101 /* BrewCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7984E2B21E58DF9F008B1101 /* BrewCommands.swift */; };
+		AA00C6631E58BB1600DEBAD0 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00C6621E58BB1600DEBAD0 /* Package.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		4E738D341DA04DF9008FE081 /* BrewList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrewList.swift; sourceTree = "<group>"; };
 		7911F5F71E58727700B97DA1 /* Brew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brew.swift; sourceTree = "<group>"; };
 		7911F5F91E5872FA00B97DA1 /* BrewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrewType.swift; sourceTree = "<group>"; };
+		7984E2B21E58DF9F008B1101 /* BrewCommands.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrewCommands.swift; sourceTree = "<group>"; };
+		AA00C6621E58BB1600DEBAD0 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,8 @@
 				4E738D341DA04DF9008FE081 /* BrewList.swift */,
 				7911F5F71E58727700B97DA1 /* Brew.swift */,
 				7911F5F91E5872FA00B97DA1 /* BrewType.swift */,
+				AA00C6621E58BB1600DEBAD0 /* Package.swift */,
+				7984E2B21E58DF9F008B1101 /* BrewCommands.swift */,
 			);
 			path = MacBrew;
 			sourceTree = "<group>";
@@ -276,9 +282,11 @@
 				4E49D4AB1D9C124800F1DF14 /* ViewController.swift in Sources */,
 				4E738D351DA04DF9008FE081 /* BrewList.swift in Sources */,
 				4E49D4D61D9C192E00F1DF14 /* BrewSearch.swift in Sources */,
+				AA00C6631E58BB1600DEBAD0 /* Package.swift in Sources */,
 				7911F5FA1E5872FA00B97DA1 /* BrewType.swift in Sources */,
 				4E49D4D41D9C12DA00F1DF14 /* BrewInstall.swift in Sources */,
 				4E49D4D81D9C194100F1DF14 /* SharedVariables.swift in Sources */,
+				7984E2B31E58DF9F008B1101 /* BrewCommands.swift in Sources */,
 				7911F5F81E58727700B97DA1 /* Brew.swift in Sources */,
 				4E49D4A91D9C124800F1DF14 /* AppDelegate.swift in Sources */,
 			);
